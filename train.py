@@ -40,6 +40,7 @@ eval_only = False # if True, script exits right after the first eval
 always_save_checkpoint = True # if True, always save a checkpoint after each eval
 init_from = 'scratch' # 'scratch' or 'resume' or 'gpt2*'
 # wandb logging
+##### enable wandb logging
 wandb_log = True # disabled by default
 wandb_project = 'DI725-A1'
 wandb_run_name = 'run' + str(time.time()) # 'run' + str(time.time())
@@ -74,8 +75,20 @@ dtype = 'bfloat16' if torch.cuda.is_available() and torch.cuda.is_bf16_supported
 compile = True # use PyTorch 2.0 to compile the model to be faster
 # -----------------------------------------------------------------------------
 config_keys = [k for k,v in globals().items() if not k.startswith('_') and isinstance(v, (int, float, bool, str))]
+######### to set eval_interval from command line or config file
+config_keys += ['eval_interval']  
+
 exec(open('configurator.py').read()) # overrides from command line or config file
 config = {k: globals()[k] for k in config_keys} # will be useful for logging
+eval_interval = config['eval_interval']  ### force update from config
+
+### 
+print(f"[DEBUG] eval_interval (from config): {eval_interval}")
+
+##### Manually update eval_interval from config since it's not automatically overwritten
+
+eval_interval = config['eval_interval']
+
 # -----------------------------------------------------------------------------
 
 # various inits, derived attributes, I/O setup
@@ -107,6 +120,8 @@ torch.manual_seed(1337 + seed_offset)
 torch.backends.cuda.matmul.allow_tf32 = True # allow tf32 on matmul
 torch.backends.cudnn.allow_tf32 = True # allow tf32 on cudnn
 device_type = 'cuda' if 'cuda' in device else 'cpu' # for later use in torch.autocast
+print(f" Using device: {device} ({torch.cuda.get_device_name(0) if device == 'cuda' else 'CPU'})")
+
 # note: float16 data type will automatically use a GradScaler
 ptdtype = {'float32': torch.float32, 'bfloat16': torch.bfloat16, 'float16': torch.float16}[dtype]
 ctx = nullcontext() if device_type == 'cpu' else torch.amp.autocast(device_type=device_type, dtype=ptdtype)
@@ -324,6 +339,7 @@ while True:
         losses = estimate_loss()
         print(f"step {iter_num}: classification- train loss {losses['train']:.4f}, classification-val loss {losses['val']:.4f}")
         if wandb_log:
+            #print(f"[WANDB] Logging at iter {iter_num}: train {losses['train']}, val {losses['val']}")
             wandb.log({
                 "iter": iter_num,
                 "train/loss": losses['train'],

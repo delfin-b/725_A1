@@ -1,0 +1,10 @@
+step 0: classification- train loss 0.0565, classification-val loss 0.0566
+iter 0: loss 1.0757, time 15599.92ms, mfu -100.00%
+iter 1: loss 1.1191, time 8651.05ms, mfu -100.00%
+iter 2: loss 1.1099, time 8766.19ms, mfu -100.00%
+iter 3: loss 1.0813, time 8768.65ms, mfu -100.00%
+Traceback (most recent call last):
+  File "C:\Users\delfi\Desktop\MMI\DI725\DI725-main\DI725-main\assignment_1\train.py", line 376, in <module>
+    X, Y = X.to(device), Y.to(device)
+           ^^^^^^^^^^^^
+KeyboardInterrupt

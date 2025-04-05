@@ -1,0 +1,16 @@
+{"time":"2025-04-05T23:55:51.335592+03:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-04-05T23:55:51.335592+03:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\delfi\\Desktop\\MMI\\DI725\\DI725-main\\DI725-main\\assignment_1\\wandb\\run-20250405_235551-q3wlchme\\logs\\debug-core.log"}
+{"time":"2025-04-05T23:55:51.6240525+03:00","level":"INFO","msg":"created new stream","id":"q3wlchme"}
+{"time":"2025-04-05T23:55:51.6240525+03:00","level":"INFO","msg":"stream: started","id":"q3wlchme"}
+{"time":"2025-04-05T23:55:51.6240525+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"q3wlchme"}
+{"time":"2025-04-05T23:55:51.6240525+03:00","level":"INFO","msg":"sender: started","stream_id":"q3wlchme"}
+{"time":"2025-04-05T23:55:51.6240525+03:00","level":"INFO","msg":"handler: started","stream_id":"q3wlchme"}
+{"time":"2025-04-05T23:55:51.9712535+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-05T23:56:40.1564906+03:00","level":"INFO","msg":"stream: closing","id":"q3wlchme"}
+{"time":"2025-04-05T23:56:40.1564906+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-05T23:56:40.1570733+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-05T23:56:40.8833827+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-05T23:56:41.154876+03:00","level":"INFO","msg":"handler: closed","stream_id":"q3wlchme"}
+{"time":"2025-04-05T23:56:41.154876+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"q3wlchme"}
+{"time":"2025-04-05T23:56:41.154876+03:00","level":"INFO","msg":"sender: closed","stream_id":"q3wlchme"}
+{"time":"2025-04-05T23:56:41.1553853+03:00","level":"INFO","msg":"stream: closed","id":"q3wlchme"}

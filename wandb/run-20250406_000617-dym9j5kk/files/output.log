@@ -1,0 +1,58 @@
+step 0: classification- train loss 0.0552, classification-val loss 0.0531
+iter 0: loss 1.0640, time 9440.98ms, mfu -100.00%
+iter 1: loss 1.0947, time 3060.89ms, mfu -100.00%
+iter 2: loss 1.0503, time 3101.20ms, mfu -100.00%
+iter 3: loss 1.0952, time 3104.20ms, mfu -100.00%
+iter 4: loss 1.0427, time 3119.96ms, mfu -100.00%
+iter 5: loss 1.0110, time 3225.57ms, mfu 0.44%
+iter 6: loss 0.9839, time 3115.68ms, mfu 0.44%
+iter 7: loss 0.9602, time 3104.27ms, mfu 0.44%
+iter 8: loss 0.9495, time 3109.29ms, mfu 0.44%
+iter 9: loss 1.0107, time 3119.84ms, mfu 0.44%
+iter 10: loss 0.9380, time 3166.67ms, mfu 0.44%
+iter 11: loss 0.9099, time 3128.63ms, mfu 0.45%
+iter 12: loss 0.9009, time 3135.68ms, mfu 0.45%
+iter 13: loss 0.8840, time 3113.56ms, mfu 0.45%
+iter 14: loss 0.8887, time 3144.67ms, mfu 0.45%
+iter 15: loss 0.8386, time 3121.77ms, mfu 0.45%
+iter 16: loss 0.8784, time 3156.74ms, mfu 0.45%
+iter 17: loss 0.8091, time 3118.57ms, mfu 0.45%
+iter 18: loss 0.7554, time 3122.16ms, mfu 0.45%
+iter 19: loss 0.7664, time 3145.65ms, mfu 0.45%
+iter 20: loss 0.7988, time 3103.59ms, mfu 0.45%
+iter 21: loss 0.8403, time 3186.77ms, mfu 0.45%
+iter 22: loss 0.7107, time 3182.57ms, mfu 0.45%
+iter 23: loss 0.8738, time 3136.73ms, mfu 0.45%
+iter 24: loss 0.7920, time 3115.34ms, mfu 0.45%
+iter 25: loss 0.8103, time 3128.78ms, mfu 0.45%
+iter 26: loss 0.6848, time 3139.86ms, mfu 0.45%
+iter 27: loss 0.7322, time 3177.94ms, mfu 0.45%
+iter 28: loss 0.6747, time 3130.58ms, mfu 0.45%
+iter 29: loss 0.7076, time 3127.48ms, mfu 0.45%
+iter 30: loss 0.7100, time 3137.61ms, mfu 0.45%
+iter 31: loss 0.8662, time 3129.79ms, mfu 0.45%
+iter 32: loss 0.6631, time 3153.39ms, mfu 0.45%
+iter 33: loss 0.7065, time 3151.05ms, mfu 0.45%
+iter 34: loss 0.6494, time 3129.36ms, mfu 0.45%
+iter 35: loss 0.6318, time 3127.40ms, mfu 0.45%
+iter 36: loss 1.0546, time 3138.01ms, mfu 0.45%
+iter 37: loss 0.9446, time 3144.54ms, mfu 0.45%
+iter 38: loss 0.7312, time 3169.88ms, mfu 0.45%
+iter 39: loss 0.6204, time 3129.15ms, mfu 0.45%
+iter 40: loss 0.6368, time 3130.43ms, mfu 0.45%
+iter 41: loss 0.6230, time 3124.60ms, mfu 0.45%
+iter 42: loss 0.6183, time 3149.46ms, mfu 0.45%
+iter 43: loss 0.6211, time 3174.59ms, mfu 0.45%
+iter 44: loss 0.6169, time 3134.47ms, mfu 0.45%
+iter 45: loss 0.8826, time 3141.81ms, mfu 0.45%
+Traceback (most recent call last):
+  File "C:\Users\delfi\Desktop\MMI\DI725\DI725-main\DI725-main\assignment_1\train.py", line 381, in <module>
+    scaler.scale(loss).backward()
+  File "C:\Users\delfi\anaconda3\envs\normal\Lib\site-packages\torch\_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "C:\Users\delfi\anaconda3\envs\normal\Lib\site-packages\torch\autograd\__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "C:\Users\delfi\anaconda3\envs\normal\Lib\site-packages\torch\autograd\graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

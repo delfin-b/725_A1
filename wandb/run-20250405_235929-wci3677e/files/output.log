@@ -1,0 +1,20 @@
+step 0: classification- train loss 0.0565, classification-val loss 0.0566
+iter 0: loss 1.0757, time 15492.46ms, mfu -100.00%
+iter 1: loss 1.1191, time 8598.34ms, mfu -100.00%
+iter 2: loss 1.1099, time 8733.41ms, mfu -100.00%
+iter 3: loss 1.0813, time 8746.43ms, mfu -100.00%
+iter 4: loss 1.1062, time 8745.82ms, mfu -100.00%
+iter 5: loss 0.9993, time 8867.48ms, mfu 0.46%
+iter 6: loss 1.0767, time 8788.16ms, mfu 0.46%
+Traceback (most recent call last):
+  File "C:\Users\delfi\Desktop\MMI\DI725\DI725-main\DI725-main\assignment_1\train.py", line 379, in <module>
+    ##################################
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\delfi\anaconda3\envs\normal\Lib\site-packages\torch\_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "C:\Users\delfi\anaconda3\envs\normal\Lib\site-packages\torch\autograd\__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "C:\Users\delfi\anaconda3\envs\normal\Lib\site-packages\torch\autograd\graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

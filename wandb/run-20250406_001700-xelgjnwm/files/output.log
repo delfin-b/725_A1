@@ -1,0 +1,21 @@
+step 0: classification- train loss 0.0552, classification-val loss 0.0531
+iter 0: loss 1.0640, time 8468.88ms, mfu -100.00%
+iter 1: loss 1.0947, time 3043.88ms, mfu -100.00%
+iter 2: loss 1.0503, time 3096.18ms, mfu -100.00%
+iter 3: loss 1.0952, time 3125.21ms, mfu -100.00%
+iter 4: loss 1.0427, time 3078.11ms, mfu -100.00%
+iter 5: loss 1.0110, time 3138.25ms, mfu 0.45%
+iter 6: loss 0.9839, time 3098.86ms, mfu 0.45%
+iter 7: loss 0.9602, time 3110.29ms, mfu 0.45%
+iter 8: loss 0.9495, time 3108.95ms, mfu 0.45%
+iter 9: loss 1.0107, time 3117.64ms, mfu 0.45%
+step 10: classification- train loss 0.0464, classification-val loss 0.0478
+saving checkpoint to out-sentiment-small
+iter 10: loss 0.9380, time 8051.69ms, mfu 0.42%
+iter 11: loss 0.9189, time 3135.60ms, mfu 0.43%
+iter 12: loss 0.9060, time 3156.21ms, mfu 0.43%
+Traceback (most recent call last):
+  File "C:\Users\delfi\Desktop\MMI\DI725\DI725-main\DI725-main\assignment_1\train.py", line 385, in <module>
+    X, Y = X.to(device), Y.to(device)
+           ^^^^^^^^^^^^
+KeyboardInterrupt
