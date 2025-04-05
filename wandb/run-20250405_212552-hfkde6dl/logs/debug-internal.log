@@ -1,0 +1,17 @@
+{"time":"2025-04-05T21:25:52.1079209+03:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-04-05T21:25:52.1079209+03:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\delfi\\Desktop\\MMI\\DI725\\DI725-main\\DI725-main\\assignment_1\\wandb\\run-20250405_212552-hfkde6dl\\logs\\debug-core.log"}
+{"time":"2025-04-05T21:25:52.4574124+03:00","level":"INFO","msg":"created new stream","id":"hfkde6dl"}
+{"time":"2025-04-05T21:25:52.4580212+03:00","level":"INFO","msg":"stream: started","id":"hfkde6dl"}
+{"time":"2025-04-05T21:25:52.4580212+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"hfkde6dl"}
+{"time":"2025-04-05T21:25:52.4580212+03:00","level":"INFO","msg":"handler: started","stream_id":"hfkde6dl"}
+{"time":"2025-04-05T21:25:52.4586244+03:00","level":"INFO","msg":"sender: started","stream_id":"hfkde6dl"}
+{"time":"2025-04-05T21:25:52.9263385+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-05T21:29:20.4181532+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-05T21:29:20.4186951+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-05T21:29:21.3650022+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-05T21:29:21.4231715+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 18-19, summary, console lines 94-100","runtime_seconds":0.0581693}],"total_operations":1}}
+{"time":"2025-04-05T21:29:22.6665595+03:00","level":"INFO","msg":"stream: closing","id":"hfkde6dl"}
+{"time":"2025-04-05T21:29:22.6665595+03:00","level":"INFO","msg":"handler: closed","stream_id":"hfkde6dl"}
+{"time":"2025-04-05T21:29:22.6665595+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"hfkde6dl"}
+{"time":"2025-04-05T21:29:22.6665595+03:00","level":"INFO","msg":"sender: closed","stream_id":"hfkde6dl"}
+{"time":"2025-04-05T21:29:22.6670658+03:00","level":"INFO","msg":"stream: closed","id":"hfkde6dl"}

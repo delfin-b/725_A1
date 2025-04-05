@@ -40,9 +40,9 @@ eval_only = False # if True, script exits right after the first eval
 always_save_checkpoint = True # if True, always save a checkpoint after each eval
 init_from = 'scratch' # 'scratch' or 'resume' or 'gpt2*'
 # wandb logging
-wandb_log = False # disabled by default
-wandb_project = 'owt'
-wandb_run_name = 'gpt2' # 'run' + str(time.time())
+wandb_log = True # disabled by default
+wandb_project = 'DI725-A1'
+wandb_run_name = 'run' + str(time.time()) # 'run' + str(time.time())
 # data
 dataset = 'openwebtext'
 gradient_accumulation_steps = 5 * 8 # used to simulate larger batch sizes
@@ -112,7 +112,9 @@ ptdtype = {'float32': torch.float32, 'bfloat16': torch.bfloat16, 'float16': torc
 ctx = nullcontext() if device_type == 'cpu' else torch.amp.autocast(device_type=device_type, dtype=ptdtype)
 
 # poor man's data loader
-data_dir = os.path.join('data', dataset)
+######3data_dir = os.path.join('data', dataset)
+
+'''
 def get_batch(split):
     # We recreate np.memmap every batch to avoid a memory leak, as per
     # https://stackoverflow.com/questions/45132940/numpy-memmap-memory-usage-want-to-iterate-once/61472122#61472122
@@ -128,14 +130,47 @@ def get_batch(split):
         x, y = x.pin_memory().to(device, non_blocking=True), y.pin_memory().to(device, non_blocking=True)
     else:
         x, y = x.to(device), y.to(device)
-    return x, y
+    return x, y'
+'''
+
+from torch.utils.data import DataLoader
+from sentiment_dataset import SentimentDataset
+
+base_dir = os.path.dirname(os.path.abspath(__file__))
+data_dir = os.path.join(base_dir, 'data', 'customer_service')
+###############
+# load sentiment dataset
+train_dataset = SentimentDataset(
+    csv_file=os.path.join(data_dir, 'cleaned_train.csv'),
+    meta_file=os.path.join(data_dir, 'meta.pkl'),
+    max_length=block_size
+)
+val_dataset = SentimentDataset(
+    csv_file=os.path.join(data_dir, 'val_split.csv'),
+    meta_file=os.path.join(data_dir, 'meta.pkl'),
+    max_length=block_size
+)
+
+train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+val_loader = DataLoader(val_dataset, batch_size=batch_size)
+train_iter = iter(train_loader)
+
+# Replacing token-level language modeling with a dataset for sentiment classification.
+# Each example consists of tokenized customer conversations and corresponding sentiment labels.
+# Uses custom SentimentDataset with padding/truncation and stoi vocab from meta.pkl.
+
+#####
 
 # init these up here, can override if init_from='resume' (i.e. from a checkpoint)
 iter_num = 0
 best_val_loss = 1e9
 
 # attempt to derive vocab_size from the dataset
-meta_path = os.path.join(data_dir, 'meta.pkl')
+#############3meta_path = os.path.join(data_dir, 'meta.pkl')
+base_dir = os.path.dirname(os.path.abspath(__file__))
+meta_path = os.path.join(base_dir, 'data', 'customer_service', 'meta.pkl')
+################
+
 meta_vocab_size = None
 if os.path.exists(meta_path):
     with open(meta_path, 'rb') as f:
@@ -219,7 +254,21 @@ def estimate_loss():
     for split in ['train', 'val']:
         losses = torch.zeros(eval_iters)
         for k in range(eval_iters):
-            X, Y = get_batch(split)
+            #########X, Y = get_batch(split)
+            ### Use DataLoader for evaluation batches instead of memmap-based get_batch
+            loader = train_loader if split == 'train' else val_loader
+            batch_iter = iter(loader)
+            for k in range(eval_iters):
+                try:
+                    X, Y = next(batch_iter)
+                except StopIteration:
+                    batch_iter = iter(loader)
+                    X, Y = next(batch_iter)
+                X, Y = X.to(device), Y.to(device)
+            #### Replaces eval data loading with classification dataset.
+                #calculates loss over several batches from train/val split to estimate performance.
+
+            ####################
             with ctx:
                 logits, loss = model(X, Y)
             losses[k] = loss.item()
@@ -247,7 +296,18 @@ if wandb_log and master_process:
     wandb.init(project=wandb_project, name=wandb_run_name, config=config)
 
 # training loop
-X, Y = get_batch('train') # fetch the very first batch
+###########X, Y = get_batch('train') # fetch the very first batch
+### Fetch a new batch from the sentiment classification DataLoader
+try:
+    X, Y = next(train_iter)
+except StopIteration:
+    train_iter = iter(train_loader)
+    X, Y = next(train_iter)
+X, Y = X.to(device), Y.to(device)
+## Get the next batch of input tokens and sentiment labels from DataLoader.
+## Automatically reset the iterator if the dataset is exhausted (one full pass).
+
+#################
 t0 = time.time()
 local_iter_num = 0 # number of iterations in the lifetime of this process
 raw_model = model.module if ddp else model # unwrap DDP container if needed
@@ -262,7 +322,7 @@ while True:
     # evaluate the loss on train/val sets and write checkpoints
     if iter_num % eval_interval == 0 and master_process:
         losses = estimate_loss()
-        print(f"step {iter_num}: train loss {losses['train']:.4f}, val loss {losses['val']:.4f}")
+        print(f"step {iter_num}: classification- train loss {losses['train']:.4f}, classification-val loss {losses['val']:.4f}")
         if wandb_log:
             wandb.log({
                 "iter": iter_num,
@@ -300,7 +360,14 @@ while True:
             logits, loss = model(X, Y)
             loss = loss / gradient_accumulation_steps # scale the loss to account for gradient accumulation
         # immediately async prefetch next batch while model is doing the forward pass on the GPU
-        X, Y = get_batch('train')
+        ######X, Y = get_batch('train')
+        try:
+            X, Y = next(train_iter)
+        except StopIteration:
+            train_iter = iter(train_loader)
+            X, Y = next(train_iter)
+        X, Y = X.to(device), Y.to(device)
+        ##################################
         # backward pass, with gradient scaling if training in fp16
         scaler.scale(loss).backward()
     # clip the gradient

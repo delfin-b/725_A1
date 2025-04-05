@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "c:\Users\delfi\Desktop\MMI\DI725\DI725-main\DI725-main\assignment_1\sentiment_train.py", line 54, in <module>
+    model = GPT(config, num_classes=3)  # For sentiment analysis (3 classes)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GPT.__init__() got an unexpected keyword argument 'num_classes'

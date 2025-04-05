@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "C:\Users\delfi\Desktop\MMI\DI725\DI725-main\DI725-main\assignment_1\train.py", line 324, in <module>
+    losses = estimate_loss()
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\delfi\anaconda3\envs\normal\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\delfi\Desktop\MMI\DI725\DI725-main\DI725-main\assignment_1\train.py", line 263, in estimate_loss
+    X, Y = next(batch_iter)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\delfi\anaconda3\envs\normal\Lib\site-packages\torch\utils\data\dataloader.py", line 701, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\delfi\anaconda3\envs\normal\Lib\site-packages\torch\utils\data\dataloader.py", line 757, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\delfi\anaconda3\envs\normal\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "C:\Users\delfi\Desktop\MMI\DI725\DI725-main\DI725-main\assignment_1\sentiment_dataset.py", line 43, in __getitem__
+    token_ids = self.tokenize(text)
+                ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\delfi\Desktop\MMI\DI725\DI725-main\DI725-main\assignment_1\sentiment_dataset.py", line 28, in tokenize
+    return [self.stoi.get(token, 0) for token in tokens]
+            ^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

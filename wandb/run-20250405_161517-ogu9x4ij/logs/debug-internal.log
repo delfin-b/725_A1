@@ -1,0 +1,16 @@
+{"time":"2025-04-05T16:15:17.2011284+03:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-04-05T16:15:17.2021439+03:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\delfi\\Desktop\\MMI\\DI725\\DI725-main\\DI725-main\\assignment_1\\wandb\\run-20250405_161517-ogu9x4ij\\logs\\debug-core.log"}
+{"time":"2025-04-05T16:15:17.4696063+03:00","level":"INFO","msg":"created new stream","id":"ogu9x4ij"}
+{"time":"2025-04-05T16:15:17.4701208+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"ogu9x4ij"}
+{"time":"2025-04-05T16:15:17.4707691+03:00","level":"INFO","msg":"stream: started","id":"ogu9x4ij"}
+{"time":"2025-04-05T16:15:17.4701208+03:00","level":"INFO","msg":"handler: started","stream_id":"ogu9x4ij"}
+{"time":"2025-04-05T16:15:17.4701208+03:00","level":"INFO","msg":"sender: started","stream_id":"ogu9x4ij"}
+{"time":"2025-04-05T16:15:17.8652303+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-05T16:15:20.42387+03:00","level":"INFO","msg":"stream: closing","id":"ogu9x4ij"}
+{"time":"2025-04-05T16:15:20.42387+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-05T16:15:20.4253376+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-05T16:15:21.1698894+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-05T16:15:21.4582879+03:00","level":"INFO","msg":"handler: closed","stream_id":"ogu9x4ij"}
+{"time":"2025-04-05T16:15:21.4582879+03:00","level":"INFO","msg":"sender: closed","stream_id":"ogu9x4ij"}
+{"time":"2025-04-05T16:15:21.4582879+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ogu9x4ij"}
+{"time":"2025-04-05T16:15:21.4588088+03:00","level":"INFO","msg":"stream: closed","id":"ogu9x4ij"}

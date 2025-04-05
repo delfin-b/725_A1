@@ -117,11 +117,12 @@ class GPTConfig:
 
 class GPT(nn.Module):
 
-    def __init__(self, config):
+    def __init__(self, config, num_classes=3): # we have 3 classes for sentiment analysis
         super().__init__()
         assert config.vocab_size is not None
         assert config.block_size is not None
         self.config = config
+        self.num_classes = num_classes 
 
         self.transformer = nn.ModuleDict(dict(
             wte = nn.Embedding(config.vocab_size, config.n_embd),
@@ -137,6 +138,12 @@ class GPT(nn.Module):
 
         # init all weights
         self.apply(self._init_weights)
+        for pn, p in self.named_parameters():
+            if pn.endswith('c_proj.weight'): # this is the output projection of the attention
+                # this is the only weight that is not initialized with normal
+                # instead we use the same initialization as the original GPT-2
+                # to ensure that the attention is not too biased at the start
+                torch.nn.init.normal_(p, mean=0.0, std=0.02 / math.sqrt(4 * config.n_layer)) 
 
         # report number of parameters
         print("number of parameters: %.2fM" % (self.get_num_params()/1e6,))
@@ -163,30 +170,30 @@ class GPT(nn.Module):
         elif isinstance(module, nn.Embedding):
             torch.nn.init.normal_(module.weight, mean=0.0, std=0.02)
 
-    def forward(self, idx, targets=None): # now idx is a tensor of token indices representing the conversation
-        # and instead of predicting the next token, we output sentiment logits.
+    def forward(self, idx, targets=None): ##### now idx is a tensor of token indices representing the conversation
+        ##### and instead of predicting the next token, we output sentiment logits.
         device = idx.device
         b, t = idx.size()
         assert t <= self.config.block_size, f"Cannot forward sequence of length {t}, block size is only {self.config.block_size}"
         pos = torch.arange(0, t, dtype=torch.long, device=device) # shape (t)
 
-        # forward the GPT model itself
+        ### forward the GPT model itself
         tok_emb = self.transformer.wte(idx) # token embeddings of shape (b, t, n_embd)
         pos_emb = self.transformer.wpe(pos) # position embeddings of shape (t, n_embd)
         x = self.transformer.drop(tok_emb + pos_emb)
-        # pass thru the transformer blocks
+        #### pass thru the transformer blocks
         for block in self.transformer.h:
             x = block(x)
         x = self.transformer.ln_f(x) # (b,t, n_embd)
 
-        ## pool the seq output for classification
-        # average pooling over the sequence dimension
+        ### pool the seq output for classification
+        ### average pooling over the sequence dimension
         rep = x.mean(dim=1) # (b, n_embd)
-        # apply the classifier head
+        #### apply the classifier head
         logits = self.classifier(rep) # (b, num_classes)
 
         if targets is not None:
-            #  targets shouldbe (B,) with class indices
+            ###  targets shouldbe (B,) with class indices
             loss = F.cross_entropy(logits, targets)
         else:
             loss = None

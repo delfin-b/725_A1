@@ -1,0 +1,101 @@
+number of parameters: 11.88M
+Epoch 1, Batch 0/25, Loss: 1.1707
+Epoch 1, Batch 10/25, Loss: 0.8628
+Epoch 1, Batch 20/25, Loss: 0.7567
+Epoch 1 completed in 10.15 sec - Train Loss: 1.0092, Train Acc: 50.64%
+Validation Loss: 0.7865, Val Acc: 42.27%, F1 Score: 0.2512
+Epoch 2, Batch 0/25, Loss: 0.8104
+Epoch 2, Batch 10/25, Loss: 0.8383
+Epoch 2, Batch 20/25, Loss: 1.0372
+Epoch 2 completed in 9.21 sec - Train Loss: 0.7624, Train Acc: 53.35%
+Validation Loss: 0.7605, Val Acc: 55.67%, F1 Score: 0.3982
+Epoch 3, Batch 0/25, Loss: 0.7101
+Epoch 3, Batch 10/25, Loss: 0.8071
+Epoch 3, Batch 20/25, Loss: 0.8246
+Epoch 3 completed in 9.23 sec - Train Loss: 0.7655, Train Acc: 55.93%
+Validation Loss: 0.7510, Val Acc: 55.67%, F1 Score: 0.3982
+Epoch 4, Batch 0/25, Loss: 0.8319
+Epoch 4, Batch 10/25, Loss: 0.8363
+Epoch 4, Batch 20/25, Loss: 0.8354
+Epoch 4 completed in 9.21 sec - Train Loss: 0.7670, Train Acc: 52.06%
+Validation Loss: 0.7399, Val Acc: 55.67%, F1 Score: 0.3982
+Epoch 5, Batch 0/25, Loss: 0.7158
+Epoch 5, Batch 10/25, Loss: 0.9137
+Epoch 5, Batch 20/25, Loss: 0.6235
+Epoch 5 completed in 9.24 sec - Train Loss: 0.7388, Train Acc: 56.06%
+Validation Loss: 0.6480, Val Acc: 55.67%, F1 Score: 0.3982
+Epoch 6, Batch 0/25, Loss: 0.5602
+Epoch 6, Batch 10/25, Loss: 1.3182
+Epoch 6, Batch 20/25, Loss: 0.5614
+Epoch 6 completed in 9.26 sec - Train Loss: 0.5900, Train Acc: 76.03%
+Validation Loss: 0.4767, Val Acc: 79.38%, F1 Score: 0.7735
+Epoch 7, Batch 0/25, Loss: 0.3345
+Epoch 7, Batch 10/25, Loss: 0.1857
+Epoch 7, Batch 20/25, Loss: 0.1969
+Epoch 7 completed in 9.27 sec - Train Loss: 0.2768, Train Acc: 92.14%
+Validation Loss: 0.2831, Val Acc: 87.63%, F1 Score: 0.8668
+Epoch 8, Batch 0/25, Loss: 0.2042
+Epoch 8, Batch 10/25, Loss: 0.2689
+Epoch 8, Batch 20/25, Loss: 0.1409
+Epoch 8 completed in 9.33 sec - Train Loss: 0.1314, Train Acc: 96.65%
+Validation Loss: 0.3273, Val Acc: 87.63%, F1 Score: 0.8675
+Epoch 9, Batch 0/25, Loss: 0.1394
+Epoch 9, Batch 10/25, Loss: 0.0440
+Epoch 9, Batch 20/25, Loss: 0.1205
+Epoch 9 completed in 9.28 sec - Train Loss: 0.0857, Train Acc: 98.20%
+Validation Loss: 0.3324, Val Acc: 88.66%, F1 Score: 0.8771
+Epoch 10, Batch 0/25, Loss: 0.2578
+Epoch 10, Batch 10/25, Loss: 0.0203
+Epoch 10, Batch 20/25, Loss: 0.0251
+Epoch 10 completed in 9.29 sec - Train Loss: 0.0855, Train Acc: 98.32%
+Validation Loss: 0.3438, Val Acc: 88.66%, F1 Score: 0.8774
+Epoch 11, Batch 0/25, Loss: 0.1039
+Epoch 11, Batch 10/25, Loss: 0.1209
+Epoch 11, Batch 20/25, Loss: 0.1054
+Epoch 11 completed in 9.28 sec - Train Loss: 0.0600, Train Acc: 97.94%
+Validation Loss: 0.3786, Val Acc: 86.08%, F1 Score: 0.8517
+Epoch 12, Batch 0/25, Loss: 0.0738
+Epoch 12, Batch 10/25, Loss: 0.0096
+Epoch 12, Batch 20/25, Loss: 0.2051
+Epoch 12 completed in 9.30 sec - Train Loss: 0.0441, Train Acc: 98.20%
+Validation Loss: 0.4513, Val Acc: 86.60%, F1 Score: 0.8595
+Epoch 13, Batch 0/25, Loss: 0.0122
+Epoch 13, Batch 10/25, Loss: 0.0281
+Epoch 13, Batch 20/25, Loss: 0.0117
+Epoch 13 completed in 9.29 sec - Train Loss: 0.0313, Train Acc: 98.97%
+Validation Loss: 0.3291, Val Acc: 89.18%, F1 Score: 0.8901
+Epoch 14, Batch 0/25, Loss: 0.0049
+Epoch 14, Batch 10/25, Loss: 0.0054
+Epoch 14, Batch 20/25, Loss: 0.0057
+Epoch 14 completed in 9.30 sec - Train Loss: 0.0091, Train Acc: 99.87%
+Validation Loss: 0.3424, Val Acc: 88.66%, F1 Score: 0.8850
+Epoch 15, Batch 0/25, Loss: 0.0067
+Epoch 15, Batch 10/25, Loss: 0.0027
+Epoch 15, Batch 20/25, Loss: 0.0043
+Epoch 15 completed in 9.32 sec - Train Loss: 0.0037, Train Acc: 100.00%
+Validation Loss: 0.3497, Val Acc: 89.18%, F1 Score: 0.8902
+Epoch 16, Batch 0/25, Loss: 0.0021
+Epoch 16, Batch 10/25, Loss: 0.0023
+Epoch 16, Batch 20/25, Loss: 0.0011
+Epoch 16 completed in 9.32 sec - Train Loss: 0.0023, Train Acc: 100.00%
+Validation Loss: 0.3568, Val Acc: 89.18%, F1 Score: 0.8888
+Epoch 17, Batch 0/25, Loss: 0.0015
+Epoch 17, Batch 10/25, Loss: 0.0014
+Epoch 17, Batch 20/25, Loss: 0.0009
+Epoch 17 completed in 9.32 sec - Train Loss: 0.0018, Train Acc: 100.00%
+Validation Loss: 0.3622, Val Acc: 89.18%, F1 Score: 0.8888
+Epoch 18, Batch 0/25, Loss: 0.0019
+Epoch 18, Batch 10/25, Loss: 0.0018
+Epoch 18, Batch 20/25, Loss: 0.0034
+Epoch 18 completed in 9.33 sec - Train Loss: 0.0015, Train Acc: 100.00%
+Validation Loss: 0.3695, Val Acc: 89.18%, F1 Score: 0.8888
+Epoch 19, Batch 0/25, Loss: 0.0014
+Epoch 19, Batch 10/25, Loss: 0.0012
+Epoch 19, Batch 20/25, Loss: 0.0011
+Epoch 19 completed in 9.33 sec - Train Loss: 0.0014, Train Acc: 100.00%
+Validation Loss: 0.3759, Val Acc: 89.18%, F1 Score: 0.8888
+Epoch 20, Batch 0/25, Loss: 0.0008
+Epoch 20, Batch 10/25, Loss: 0.0017
+Epoch 20, Batch 20/25, Loss: 0.0007
+Epoch 20 completed in 9.34 sec - Train Loss: 0.0012, Train Acc: 100.00%
+Validation Loss: 0.3790, Val Acc: 88.66%, F1 Score: 0.8850

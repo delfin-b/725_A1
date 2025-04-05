@@ -1,0 +1,26 @@
+number of parameters: 11.88M
+Epoch 1, Batch 0/25, Loss: 1.2105
+Epoch 1, Batch 10/25, Loss: 0.6937
+Epoch 1, Batch 20/25, Loss: 0.8445
+Epoch 1 completed in 10.85 sec - Average Loss: 0.9564
+Validation Accuracy after Epoch 1: 55.67%
+Epoch 2, Batch 0/25, Loss: 0.7037
+Epoch 2, Batch 10/25, Loss: 0.7176
+Epoch 2, Batch 20/25, Loss: 0.7227
+Epoch 2 completed in 10.41 sec - Average Loss: 0.7654
+Validation Accuracy after Epoch 2: 55.67%
+Epoch 3, Batch 0/25, Loss: 0.6669
+Epoch 3, Batch 10/25, Loss: 0.9251
+Epoch 3, Batch 20/25, Loss: 0.7613
+Epoch 3 completed in 9.96 sec - Average Loss: 0.7612
+Validation Accuracy after Epoch 3: 55.67%
+Epoch 4, Batch 0/25, Loss: 0.8109
+Epoch 4, Batch 10/25, Loss: 0.7136
+Epoch 4, Batch 20/25, Loss: 0.8760
+Epoch 4 completed in 9.99 sec - Average Loss: 0.7564
+Validation Accuracy after Epoch 4: 55.67%
+Epoch 5, Batch 0/25, Loss: 0.6917
+Epoch 5, Batch 10/25, Loss: 0.6656
+Epoch 5, Batch 20/25, Loss: 0.4282
+Epoch 5 completed in 10.17 sec - Average Loss: 0.6724
+Validation Accuracy after Epoch 5: 85.57%

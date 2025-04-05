@@ -1,0 +1,29 @@
+2025-04-05 21:25:52,052 INFO    MainThread:23976 [wandb_setup.py:_flush():68] Current SDK version is 0.19.1
+2025-04-05 21:25:52,052 INFO    MainThread:23976 [wandb_setup.py:_flush():68] Configure stats pid to 23976
+2025-04-05 21:25:52,053 INFO    MainThread:23976 [wandb_setup.py:_flush():68] Loading settings from C:\Users\delfi\.config\wandb\settings
+2025-04-05 21:25:52,053 INFO    MainThread:23976 [wandb_setup.py:_flush():68] Loading settings from C:\Users\delfi\Desktop\MMI\DI725\DI725-main\DI725-main\assignment_1\wandb\settings
+2025-04-05 21:25:52,053 INFO    MainThread:23976 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-04-05 21:25:52,053 INFO    MainThread:23976 [wandb_init.py:_log_setup():528] Logging user logs to C:\Users\delfi\Desktop\MMI\DI725\DI725-main\DI725-main\assignment_1\wandb\run-20250405_212552-hfkde6dl\logs\debug.log
+2025-04-05 21:25:52,054 INFO    MainThread:23976 [wandb_init.py:_log_setup():529] Logging internal logs to C:\Users\delfi\Desktop\MMI\DI725\DI725-main\DI725-main\assignment_1\wandb\run-20250405_212552-hfkde6dl\logs\debug-internal.log
+2025-04-05 21:25:52,054 INFO    MainThread:23976 [wandb_init.py:init():644] calling init triggers
+2025-04-05 21:25:52,054 INFO    MainThread:23976 [wandb_init.py:init():650] wandb.init called with sweep_config: {}
+config: {'batch_size': 32, 'max_epochs': 20, 'learning_rate': 0.0003, 'block_size': 256, 'n_layer': 6, 'n_head': 6, 'n_embd': 384, 'dropout': 0.1, 'bias': True, 'num_classes': 3}
+2025-04-05 21:25:52,054 INFO    MainThread:23976 [wandb_init.py:init():680] starting backend
+2025-04-05 21:25:52,054 INFO    MainThread:23976 [wandb_init.py:init():684] sending inform_init request
+2025-04-05 21:25:52,104 INFO    MainThread:23976 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=spawn, using: spawn
+2025-04-05 21:25:52,105 INFO    MainThread:23976 [wandb_init.py:init():697] backend started and connected
+2025-04-05 21:25:52,106 INFO    MainThread:23976 [wandb_init.py:init():790] updated telemetry
+2025-04-05 21:25:52,161 INFO    MainThread:23976 [wandb_init.py:init():822] communicating run to backend with 90.0 second timeout
+2025-04-05 21:25:52,912 INFO    MainThread:23976 [wandb_init.py:init():874] starting run threads in backend
+2025-04-05 21:25:53,922 INFO    MainThread:23976 [wandb_run.py:_console_start():2374] atexit reg
+2025-04-05 21:25:53,922 INFO    MainThread:23976 [wandb_run.py:_redirect():2224] redirect: wrap_raw
+2025-04-05 21:25:53,922 INFO    MainThread:23976 [wandb_run.py:_redirect():2289] Wrapping output streams.
+2025-04-05 21:25:53,922 INFO    MainThread:23976 [wandb_run.py:_redirect():2314] Redirects installed.
+2025-04-05 21:25:53,927 INFO    MainThread:23976 [wandb_init.py:init():916] run started, returning control to user process
+2025-04-05 21:29:20,416 INFO    MainThread:23976 [wandb_run.py:_finish():2100] finishing run delfin-b-metu-middle-east-technical-university/DI725_Sentiment_Analysis/hfkde6dl
+2025-04-05 21:29:20,417 INFO    MainThread:23976 [wandb_run.py:_atexit_cleanup():2339] got exitcode: 0
+2025-04-05 21:29:20,417 INFO    MainThread:23976 [wandb_run.py:_restore():2321] restore
+2025-04-05 21:29:20,417 INFO    MainThread:23976 [wandb_run.py:_restore():2327] restore done
+2025-04-05 21:29:22,655 INFO    MainThread:23976 [wandb_run.py:_footer_history_summary_info():3892] rendering history
+2025-04-05 21:29:22,655 INFO    MainThread:23976 [wandb_run.py:_footer_history_summary_info():3924] rendering summary
+2025-04-05 21:29:22,664 INFO    MainThread:23976 [wandb_run.py:_footer_sync_info():3853] logging synced files

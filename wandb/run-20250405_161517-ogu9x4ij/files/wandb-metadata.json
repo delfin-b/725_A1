@@ -1,0 +1,42 @@
+{
+  "os": "Windows-11-10.0.26100-SP0",
+  "python": "CPython 3.12.3",
+  "startedAt": "2025-04-05T13:15:17.188831Z",
+  "program": "c:\\Users\\delfi\\Desktop\\MMI\\DI725\\DI725-main\\DI725-main\\assignment_1\\sentiment_train.py",
+  "codePath": "sentiment_train.py",
+  "git": {
+    "remote": "https://github.com/delfin-b/725_A1.git",
+    "commit": "edd749072cfb5d3d92f7d67c154efc7f9053cbcf"
+  },
+  "email": "delfinb.gurkan@gmail.com",
+  "root": "C:\\Users\\delfi\\Desktop\\MMI\\DI725\\DI725-main\\DI725-main\\assignment_1",
+  "host": "DESKTOP-FU5M915",
+  "executable": "C:\\Users\\delfi\\anaconda3\\envs\\normal\\python.exe",
+  "codePathLocal": "sentiment_train.py",
+  "cpu_count": 4,
+  "cpu_count_logical": 8,
+  "gpu": "NVIDIA GeForce GTX 1650",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "499194597376",
+      "used": "443153657856"
+    }
+  },
+  "memory": {
+    "total": "16970665984"
+  },
+  "cpu": {
+    "count": 4,
+    "countLogical": 8
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce GTX 1650",
+      "memoryTotal": "4294967296",
+      "cudaCores": 1024,
+      "architecture": "Turing"
+    }
+  ],
+  "cudaVersion": "12.4"
+}
