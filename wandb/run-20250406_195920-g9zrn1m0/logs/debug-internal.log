@@ -1,0 +1,8 @@
+{"time":"2025-04-06T19:59:20.1022661+03:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-04-06T19:59:20.1022661+03:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\delfi\\Desktop\\MMI\\DI725\\DI725-main\\DI725-main\\assignment_1\\wandb\\run-20250406_195920-g9zrn1m0\\logs\\debug-core.log"}
+{"time":"2025-04-06T19:59:20.3921563+03:00","level":"INFO","msg":"created new stream","id":"g9zrn1m0"}
+{"time":"2025-04-06T19:59:20.3921563+03:00","level":"INFO","msg":"stream: started","id":"g9zrn1m0"}
+{"time":"2025-04-06T19:59:20.3921563+03:00","level":"INFO","msg":"handler: started","stream_id":"g9zrn1m0"}
+{"time":"2025-04-06T19:59:20.3921563+03:00","level":"INFO","msg":"sender: started","stream_id":"g9zrn1m0"}
+{"time":"2025-04-06T19:59:20.3921563+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"g9zrn1m0"}
+{"time":"2025-04-06T19:59:20.8049222+03:00","level":"INFO","msg":"Starting system monitor"}
