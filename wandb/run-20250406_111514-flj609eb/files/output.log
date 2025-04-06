@@ -1,0 +1,110 @@
+step 0: classification- train loss 0.0552, classification-val loss 0.0531
+[WANDB] Logging at iter 0: train 0.05518798902630806, val 0.0531005859375
+iter 0: loss 1.0640, time 10523.94ms, mfu -100.00%
+iter 1: loss 1.0947, time 3645.36ms, mfu -100.00%
+iter 2: loss 1.0503, time 3692.53ms, mfu -100.00%
+iter 3: loss 1.0952, time 3701.56ms, mfu -100.00%
+iter 4: loss 1.0427, time 3702.77ms, mfu -100.00%
+iter 5: loss 1.0110, time 3814.89ms, mfu 0.37%
+iter 6: loss 0.9839, time 3987.11ms, mfu 0.37%
+iter 7: loss 0.9602, time 4013.36ms, mfu 0.37%
+iter 8: loss 0.9495, time 3755.42ms, mfu 0.37%
+iter 9: loss 1.0107, time 4056.77ms, mfu 0.37%
+iter 10: loss 0.9380, time 3784.83ms, mfu 0.37%
+iter 11: loss 0.9099, time 3711.56ms, mfu 0.37%
+iter 12: loss 0.9009, time 3709.11ms, mfu 0.37%
+iter 13: loss 0.8840, time 3813.79ms, mfu 0.37%
+iter 14: loss 0.8887, time 3763.99ms, mfu 0.37%
+iter 15: loss 0.8386, time 3844.11ms, mfu 0.37%
+iter 16: loss 0.8784, time 3756.16ms, mfu 0.37%
+iter 17: loss 0.8091, time 3708.56ms, mfu 0.37%
+iter 18: loss 0.7554, time 3698.40ms, mfu 0.37%
+iter 19: loss 0.7664, time 3695.25ms, mfu 0.37%
+iter 20: loss 0.7988, time 3906.52ms, mfu 0.37%
+iter 21: loss 0.8403, time 3792.73ms, mfu 0.37%
+iter 22: loss 0.7107, time 3752.93ms, mfu 0.37%
+iter 23: loss 0.8738, time 3727.66ms, mfu 0.37%
+iter 24: loss 0.7920, time 3754.57ms, mfu 0.37%
+iter 25: loss 0.8103, time 4065.41ms, mfu 0.37%
+iter 26: loss 0.6848, time 3764.97ms, mfu 0.37%
+iter 27: loss 0.7322, time 3808.60ms, mfu 0.37%
+iter 28: loss 0.6747, time 3839.09ms, mfu 0.37%
+iter 29: loss 0.7076, time 3812.89ms, mfu 0.37%
+iter 30: loss 0.7100, time 3739.18ms, mfu 0.37%
+iter 31: loss 0.8662, time 3741.42ms, mfu 0.37%
+iter 32: loss 0.6631, time 3781.42ms, mfu 0.37%
+iter 33: loss 0.7065, time 3750.25ms, mfu 0.37%
+iter 34: loss 0.6494, time 3799.86ms, mfu 0.37%
+iter 35: loss 0.6318, time 3732.54ms, mfu 0.37%
+iter 36: loss 1.0546, time 3757.31ms, mfu 0.37%
+iter 37: loss 0.9446, time 4168.11ms, mfu 0.37%
+iter 38: loss 0.7312, time 3803.07ms, mfu 0.37%
+iter 39: loss 0.6204, time 3766.65ms, mfu 0.37%
+iter 40: loss 0.6368, time 3728.50ms, mfu 0.37%
+iter 41: loss 0.6230, time 3763.27ms, mfu 0.37%
+iter 42: loss 0.6183, time 3730.78ms, mfu 0.37%
+iter 43: loss 0.6211, time 3778.80ms, mfu 0.37%
+iter 44: loss 0.6169, time 3806.46ms, mfu 0.37%
+iter 45: loss 0.8826, time 4033.83ms, mfu 0.37%
+iter 46: loss 0.5764, time 3776.05ms, mfu 0.37%
+iter 47: loss 0.6033, time 3823.83ms, mfu 0.37%
+iter 48: loss 0.6731, time 3771.53ms, mfu 0.37%
+iter 49: loss 0.5965, time 3793.41ms, mfu 0.37%
+iter 50: loss 0.5035, time 3750.40ms, mfu 0.37%
+iter 51: loss 0.5226, time 3748.00ms, mfu 0.37%
+iter 52: loss 0.5109, time 3863.94ms, mfu 0.37%
+iter 53: loss 0.5494, time 3793.81ms, mfu 0.37%
+iter 54: loss 0.4562, time 3832.24ms, mfu 0.37%
+iter 55: loss 0.5607, time 3745.13ms, mfu 0.37%
+iter 56: loss 0.6077, time 3752.60ms, mfu 0.37%
+iter 57: loss 0.2972, time 3764.24ms, mfu 0.37%
+iter 58: loss 0.6123, time 3807.66ms, mfu 0.37%
+iter 59: loss 0.5161, time 3980.58ms, mfu 0.37%
+iter 60: loss 0.3966, time 3773.00ms, mfu 0.37%
+iter 61: loss 0.5942, time 3804.26ms, mfu 0.37%
+iter 62: loss 0.2490, time 3769.73ms, mfu 0.37%
+iter 63: loss 0.6313, time 3765.98ms, mfu 0.37%
+iter 64: loss 0.4978, time 3774.11ms, mfu 0.37%
+iter 65: loss 0.5216, time 3815.18ms, mfu 0.37%
+iter 66: loss 0.4838, time 3807.01ms, mfu 0.37%
+Traceback (most recent call last):
+  File "C:\Users\delfi\Desktop\MMI\DI725\DI725-main\DI725-main\assignment_1\train.py", line 377, in <module>
+    logits, loss = model(X, Y)
+                   ^^^^^^^^^^^
+  File "C:\Users\delfi\anaconda3\envs\normal\Lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\delfi\anaconda3\envs\normal\Lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\delfi\Desktop\MMI\DI725\DI725-main\DI725-main\assignment_1\model.py", line 186, in forward
+    x = block(x)
+        ^^^^^^^^
+  File "C:\Users\delfi\anaconda3\envs\normal\Lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\delfi\anaconda3\envs\normal\Lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\delfi\Desktop\MMI\DI725\DI725-main\DI725-main\assignment_1\model.py", line 105, in forward
+    x = x + self.mlp(self.ln_2(x))
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\delfi\anaconda3\envs\normal\Lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\delfi\anaconda3\envs\normal\Lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\delfi\Desktop\MMI\DI725\DI725-main\DI725-main\assignment_1\model.py", line 89, in forward
+    x = self.gelu(x)
+        ^^^^^^^^^^^^
+  File "C:\Users\delfi\anaconda3\envs\normal\Lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\delfi\anaconda3\envs\normal\Lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\delfi\anaconda3\envs\normal\Lib\site-packages\torch\nn\modules\activation.py", line 733, in forward
+    def forward(self, input: Tensor) -> Tensor:
+
+KeyboardInterrupt

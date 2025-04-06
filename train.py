@@ -33,9 +33,9 @@ from model import GPTConfig, GPT
 # default config values designed to train a gpt2 (124M) on OpenWebText
 # I/O
 out_dir = 'out'
-eval_interval = 2000
+eval_interval = 10 #2000
 log_interval = 1
-eval_iters = 200
+eval_iters = 10
 eval_only = False # if True, script exits right after the first eval
 always_save_checkpoint = True # if True, always save a checkpoint after each eval
 init_from = 'scratch' # 'scratch' or 'resume' or 'gpt2*'
@@ -268,18 +268,17 @@ def estimate_loss():
     model.eval()
     for split in ['train', 'val']:
         losses = torch.zeros(eval_iters)
+        loader = train_loader if split == 'train' else val_loader
+        batch_iter = iter(loader)
         for k in range(eval_iters):
             #########X, Y = get_batch(split)
             ### Use DataLoader for evaluation batches instead of memmap-based get_batch
-            loader = train_loader if split == 'train' else val_loader
-            batch_iter = iter(loader)
-            for k in range(eval_iters):
-                try:
-                    X, Y = next(batch_iter)
-                except StopIteration:
-                    batch_iter = iter(loader)
-                    X, Y = next(batch_iter)
-                X, Y = X.to(device), Y.to(device)
+            try:
+                X, Y = next(batch_iter)
+            except StopIteration:
+                batch_iter = iter(loader)
+                X, Y = next(batch_iter)
+            X, Y = X.to(device), Y.to(device)
             #### Replaces eval data loading with classification dataset.
                 #calculates loss over several batches from train/val split to estimate performance.
 
@@ -339,14 +338,15 @@ while True:
         losses = estimate_loss()
         print(f"step {iter_num}: classification- train loss {losses['train']:.4f}, classification-val loss {losses['val']:.4f}")
         if wandb_log:
-            #print(f"[WANDB] Logging at iter {iter_num}: train {losses['train']}, val {losses['val']}")
+            print(f"[WANDB] Logging at iter {iter_num}: train {losses['train']}, val {losses['val']}")
             wandb.log({
-                "iter": iter_num,
-                "train/loss": losses['train'],
-                "val/loss": losses['val'],
-                "lr": lr,
-                "mfu": running_mfu*100, # convert to percentage
-            })
+                "iter": int(iter_num),
+                "train/loss": float(losses['train']),
+                "val/loss": float(losses['val']),
+                "lr": float(lr),
+                "mfu": float(running_mfu * 100),
+            }) #
+
         if losses['val'] < best_val_loss or always_save_checkpoint:
             best_val_loss = losses['val']
             if iter_num > 0:

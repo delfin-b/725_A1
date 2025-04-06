@@ -16,5 +16,5 @@ max_iters = 1000 ## readjusted to speed-up training
 lr_decay_iters = 1000
 out_dir = 'out-sentiment-small'
 wandb_log = True
-wandb_project = 'sentiment-classification'
+wandb_project = '(1000)sentiment-classification_v2'
 wandb_run_name = 'sentiment-small-gpt'

@@ -1,0 +1,133 @@
+step 0: classification- train loss 1.0616, classification-val loss 1.0628
+[WANDB] Logging at iter 0: train 1.0616455078125, val 1.062768578529358
+iter 0: loss 1.0640, time 5171.09ms, mfu -100.00%
+iter 1: loss 1.0833, time 3635.65ms, mfu -100.00%
+iter 2: loss 1.0847, time 3675.86ms, mfu -100.00%
+iter 3: loss 1.0540, time 3682.08ms, mfu -100.00%
+iter 4: loss 1.0227, time 3679.26ms, mfu -100.00%
+iter 5: loss 1.0544, time 3732.05ms, mfu 0.38%
+iter 6: loss 0.9819, time 3682.72ms, mfu 0.38%
+iter 7: loss 1.0173, time 3708.40ms, mfu 0.38%
+iter 8: loss 1.0073, time 3689.73ms, mfu 0.38%
+iter 9: loss 1.0112, time 3712.43ms, mfu 0.38%
+step 10: classification- train loss 0.9221, classification-val loss 0.9337
+[WANDB] Logging at iter 10: train 0.9221435785293579, val 0.9337158203125
+saving checkpoint to out-sentiment-small
+iter 10: loss 0.9465, time 4783.34ms, mfu 0.37%
+iter 11: loss 0.9324, time 3723.02ms, mfu 0.37%
+iter 12: loss 0.9133, time 3711.38ms, mfu 0.37%
+iter 13: loss 0.8774, time 3688.61ms, mfu 0.37%
+iter 14: loss 0.8442, time 3702.25ms, mfu 0.38%
+iter 15: loss 0.9106, time 3738.52ms, mfu 0.38%
+iter 16: loss 0.8684, time 3814.14ms, mfu 0.38%
+iter 17: loss 0.7734, time 4020.93ms, mfu 0.37%
+iter 18: loss 0.8533, time 3804.67ms, mfu 0.37%
+iter 19: loss 0.7422, time 3763.17ms, mfu 0.37%
+step 20: classification- train loss 0.7402, classification-val loss 0.7770
+[WANDB] Logging at iter 20: train 0.740234375, val 0.7770019769668579
+saving checkpoint to out-sentiment-small
+iter 20: loss 0.7507, time 5015.90ms, mfu 0.36%
+iter 21: loss 0.7148, time 3763.23ms, mfu 0.37%
+iter 22: loss 0.7393, time 3721.55ms, mfu 0.37%
+iter 23: loss 0.7385, time 3730.33ms, mfu 0.37%
+iter 24: loss 0.7317, time 3740.80ms, mfu 0.37%
+iter 25: loss 0.7717, time 3723.85ms, mfu 0.37%
+iter 26: loss 0.7195, time 3729.49ms, mfu 0.37%
+iter 27: loss 0.6453, time 3773.62ms, mfu 0.37%
+iter 28: loss 0.7166, time 3723.31ms, mfu 0.37%
+iter 29: loss 0.6807, time 3845.02ms, mfu 0.37%
+step 30: classification- train loss 0.7718, classification-val loss 0.7515
+[WANDB] Logging at iter 30: train 0.7718139886856079, val 0.751452624797821
+saving checkpoint to out-sentiment-small
+iter 30: loss 0.6992, time 4657.42ms, mfu 0.37%
+iter 31: loss 0.6992, time 3806.20ms, mfu 0.37%
+iter 32: loss 0.6429, time 3811.78ms, mfu 0.37%
+iter 33: loss 0.6681, time 3715.63ms, mfu 0.37%
+iter 34: loss 0.6700, time 3748.76ms, mfu 0.37%
+iter 35: loss 0.6898, time 3760.43ms, mfu 0.37%
+iter 36: loss 0.6479, time 3749.80ms, mfu 0.37%
+iter 37: loss 0.8721, time 3759.11ms, mfu 0.37%
+iter 38: loss 0.8932, time 3838.61ms, mfu 0.37%
+iter 39: loss 0.6229, time 3749.89ms, mfu 0.37%
+step 40: classification- train loss 0.6337, classification-val loss 0.7253
+[WANDB] Logging at iter 40: train 0.63372802734375, val 0.725341796875
+saving checkpoint to out-sentiment-small
+iter 40: loss 0.6228, time 4838.84ms, mfu 0.36%
+iter 41: loss 0.9099, time 3788.88ms, mfu 0.36%
+iter 42: loss 0.6141, time 3929.97ms, mfu 0.36%
+iter 43: loss 0.6177, time 3812.76ms, mfu 0.36%
+iter 44: loss 0.6619, time 3721.40ms, mfu 0.37%
+iter 45: loss 0.6504, time 3927.27ms, mfu 0.37%
+iter 46: loss 0.6548, time 3717.88ms, mfu 0.37%
+iter 47: loss 0.8801, time 3741.03ms, mfu 0.37%
+iter 48: loss 0.9814, time 3791.14ms, mfu 0.37%
+iter 49: loss 0.4940, time 3779.82ms, mfu 0.37%
+step 50: classification- train loss 0.6339, classification-val loss 0.6386
+[WANDB] Logging at iter 50: train 0.6339019536972046, val 0.6386352777481079
+saving checkpoint to out-sentiment-small
+iter 50: loss 0.8269, time 4662.78ms, mfu 0.36%
+iter 51: loss 0.5092, time 3753.26ms, mfu 0.36%
+iter 52: loss 0.7882, time 3724.78ms, mfu 0.37%
+iter 53: loss 0.7341, time 3759.90ms, mfu 0.37%
+iter 54: loss 0.5211, time 3768.06ms, mfu 0.37%
+iter 55: loss 0.5102, time 3751.17ms, mfu 0.37%
+iter 56: loss 0.4753, time 3768.26ms, mfu 0.37%
+iter 57: loss 0.6322, time 3760.11ms, mfu 0.37%
+iter 58: loss 0.5580, time 3741.41ms, mfu 0.37%
+iter 59: loss 0.5142, time 3782.00ms, mfu 0.37%
+step 60: classification- train loss 0.5383, classification-val loss 0.5802
+[WANDB] Logging at iter 60: train 0.5383018255233765, val 0.5801612734794617
+saving checkpoint to out-sentiment-small
+iter 60: loss 0.5969, time 4642.77ms, mfu 0.36%
+iter 61: loss 0.4880, time 3741.72ms, mfu 0.37%
+iter 62: loss 0.6681, time 3752.34ms, mfu 0.37%
+iter 63: loss 0.5494, time 3733.27ms, mfu 0.37%
+iter 64: loss 0.5289, time 3720.46ms, mfu 0.37%
+iter 65: loss 0.7033, time 3851.49ms, mfu 0.37%
+iter 66: loss 0.5871, time 3751.78ms, mfu 0.37%
+iter 67: loss 0.6866, time 3746.65ms, mfu 0.37%
+iter 68: loss 0.7891, time 3784.55ms, mfu 0.37%
+iter 69: loss 0.2453, time 3756.37ms, mfu 0.37%
+step 70: classification- train loss 0.4955, classification-val loss 0.5416
+[WANDB] Logging at iter 70: train 0.4955310821533203, val 0.541634738445282
+saving checkpoint to out-sentiment-small
+iter 70: loss 0.4890, time 4897.60ms, mfu 0.36%
+iter 71: loss 0.9088, time 3771.61ms, mfu 0.36%
+iter 72: loss 0.2824, time 3803.75ms, mfu 0.37%
+iter 73: loss 0.4955, time 3782.49ms, mfu 0.37%
+iter 74: loss 0.5670, time 3744.58ms, mfu 0.37%
+iter 75: loss 0.5139, time 3776.38ms, mfu 0.37%
+iter 76: loss 0.4818, time 3802.80ms, mfu 0.37%
+iter 77: loss 0.4474, time 3757.79ms, mfu 0.37%
+iter 78: loss 0.2312, time 3766.44ms, mfu 0.37%
+iter 79: loss 0.4115, time 3744.37ms, mfu 0.37%
+step 80: classification- train loss 0.4690, classification-val loss 0.5091
+[WANDB] Logging at iter 80: train 0.46898117661476135, val 0.5091384649276733
+saving checkpoint to out-sentiment-small
+iter 80: loss 0.7375, time 4858.42ms, mfu 0.36%
+iter 81: loss 0.4185, time 3805.46ms, mfu 0.36%
+iter 82: loss 0.6033, time 3759.15ms, mfu 0.37%
+iter 83: loss 0.7897, time 3749.06ms, mfu 0.37%
+iter 84: loss 0.2869, time 3756.66ms, mfu 0.37%
+iter 85: loss 0.4744, time 3779.63ms, mfu 0.37%
+iter 86: loss 0.5745, time 3731.57ms, mfu 0.37%
+iter 87: loss 0.5082, time 3798.06ms, mfu 0.37%
+iter 88: loss 0.4164, time 3806.14ms, mfu 0.37%
+iter 89: loss 0.6600, time 3764.18ms, mfu 0.37%
+step 90: classification- train loss 0.3783, classification-val loss 0.4805
+[WANDB] Logging at iter 90: train 0.3782714903354645, val 0.4805335998535156
+saving checkpoint to out-sentiment-small
+iter 90: loss 0.8655, time 5214.52ms, mfu 0.36%
+iter 91: loss 0.5788, time 3897.59ms, mfu 0.36%
+iter 92: loss 0.3323, time 3791.31ms, mfu 0.36%
+iter 93: loss 0.2809, time 3796.37ms, mfu 0.36%
+iter 94: loss 0.2294, time 3758.74ms, mfu 0.36%
+iter 95: loss 0.4168, time 3768.81ms, mfu 0.37%
+iter 96: loss 0.3534, time 3817.29ms, mfu 0.37%
+iter 97: loss 0.2942, time 3794.42ms, mfu 0.37%
+iter 98: loss 0.3600, time 3772.44ms, mfu 0.37%
+iter 99: loss 0.4788, time 3754.26ms, mfu 0.37%
+step 100: classification- train loss 0.3352, classification-val loss 0.4365
+[WANDB] Logging at iter 100: train 0.3352035582065582, val 0.4365062713623047
+saving checkpoint to out-sentiment-small
+iter 100: loss 0.2496, time 4853.42ms, mfu 0.36%

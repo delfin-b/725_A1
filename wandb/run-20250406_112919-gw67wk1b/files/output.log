@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\delfi\Desktop\MMI\DI725\DI725-main\DI725-main\assignment_1\train.py", line 336, in <module>
+    losses = estimate_loss()
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\delfi\anaconda3\envs\normal\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\delfi\Desktop\MMI\DI725\DI725-main\DI725-main\assignment_1\train.py", line 275, in estimate_loss
+    X, Y = next(batch_iter)
+                ^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'batch_iter' where it is not associated with a value

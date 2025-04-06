@@ -1,0 +1,16 @@
+{"time":"2025-04-06T11:43:11.0793975+03:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-04-06T11:43:11.07994+03:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\delfi\\Desktop\\MMI\\DI725\\DI725-main\\DI725-main\\assignment_1\\wandb\\run-20250406_114310-eop10hgc\\logs\\debug-core.log"}
+{"time":"2025-04-06T11:43:11.2042894+03:00","level":"INFO","msg":"created new stream","id":"eop10hgc"}
+{"time":"2025-04-06T11:43:11.2042894+03:00","level":"INFO","msg":"stream: started","id":"eop10hgc"}
+{"time":"2025-04-06T11:43:11.2042894+03:00","level":"INFO","msg":"handler: started","stream_id":"eop10hgc"}
+{"time":"2025-04-06T11:43:11.2042894+03:00","level":"INFO","msg":"sender: started","stream_id":"eop10hgc"}
+{"time":"2025-04-06T11:43:11.2042894+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"eop10hgc"}
+{"time":"2025-04-06T11:43:11.8060347+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-06T11:49:45.6975192+03:00","level":"INFO","msg":"stream: closing","id":"eop10hgc"}
+{"time":"2025-04-06T11:49:45.6975192+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-06T11:49:45.6984819+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-06T11:49:46.509025+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-06T11:49:46.8137075+03:00","level":"INFO","msg":"handler: closed","stream_id":"eop10hgc"}
+{"time":"2025-04-06T11:49:46.8137075+03:00","level":"INFO","msg":"sender: closed","stream_id":"eop10hgc"}
+{"time":"2025-04-06T11:49:46.8137075+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"eop10hgc"}
+{"time":"2025-04-06T11:49:46.8143133+03:00","level":"INFO","msg":"stream: closed","id":"eop10hgc"}

@@ -1,0 +1,16 @@
+{"time":"2025-04-06T11:29:19.4810194+03:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-04-06T11:29:19.4810194+03:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\delfi\\Desktop\\MMI\\DI725\\DI725-main\\DI725-main\\assignment_1\\wandb\\run-20250406_112919-gw67wk1b\\logs\\debug-core.log"}
+{"time":"2025-04-06T11:29:19.617793+03:00","level":"INFO","msg":"created new stream","id":"gw67wk1b"}
+{"time":"2025-04-06T11:29:19.6183422+03:00","level":"INFO","msg":"stream: started","id":"gw67wk1b"}
+{"time":"2025-04-06T11:29:19.6183422+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"gw67wk1b"}
+{"time":"2025-04-06T11:29:19.6183422+03:00","level":"INFO","msg":"handler: started","stream_id":"gw67wk1b"}
+{"time":"2025-04-06T11:29:19.6183422+03:00","level":"INFO","msg":"sender: started","stream_id":"gw67wk1b"}
+{"time":"2025-04-06T11:29:20.126649+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-06T11:29:21.7425233+03:00","level":"INFO","msg":"stream: closing","id":"gw67wk1b"}
+{"time":"2025-04-06T11:29:21.7425233+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-06T11:29:21.7431533+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-06T11:29:23.8884045+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-06T11:29:24.2989401+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"gw67wk1b"}
+{"time":"2025-04-06T11:29:24.2989401+03:00","level":"INFO","msg":"sender: closed","stream_id":"gw67wk1b"}
+{"time":"2025-04-06T11:29:24.2989401+03:00","level":"INFO","msg":"handler: closed","stream_id":"gw67wk1b"}
+{"time":"2025-04-06T11:29:24.3001948+03:00","level":"INFO","msg":"stream: closed","id":"gw67wk1b"}

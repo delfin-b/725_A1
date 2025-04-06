@@ -1,0 +1,11 @@
+step 0: classification- train loss 1.0548, classification-val loss 1.0546
+[WANDB] Logging at iter 0: train 1.054772973060608, val 1.0546143054962158
+iter 0: loss 1.0640, time 6337.11ms, mfu -100.00%
+iter 1: loss 1.0850, time 3676.77ms, mfu -100.00%
+iter 2: loss 1.0244, time 3768.54ms, mfu -100.00%
+iter 3: loss 1.1062, time 3861.74ms, mfu -100.00%
+Traceback (most recent call last):
+  File "C:\Users\delfi\Desktop\MMI\DI725\DI725-main\DI725-main\assignment_1\train.py", line 385, in <module>
+    X, Y = X.to(device), Y.to(device)
+           ^^^^^^^^^^^^
+KeyboardInterrupt

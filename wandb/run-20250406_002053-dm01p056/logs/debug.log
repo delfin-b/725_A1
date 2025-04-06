@@ -15,3 +15,9 @@ config: {'out_dir': 'out-sentiment-small', 'eval_interval': 2000, 'log_interval'
 2025-04-06 00:20:53,953 INFO    MainThread:15648 [wandb_init.py:init():790] updated telemetry
 2025-04-06 00:20:54,013 INFO    MainThread:15648 [wandb_init.py:init():822] communicating run to backend with 90.0 second timeout
 2025-04-06 00:20:54,500 INFO    MainThread:15648 [wandb_init.py:init():874] starting run threads in backend
+2025-04-06 00:20:55,141 INFO    MainThread:15648 [wandb_run.py:_console_start():2374] atexit reg
+2025-04-06 00:20:55,141 INFO    MainThread:15648 [wandb_run.py:_redirect():2224] redirect: wrap_raw
+2025-04-06 00:20:55,141 INFO    MainThread:15648 [wandb_run.py:_redirect():2289] Wrapping output streams.
+2025-04-06 00:20:55,141 INFO    MainThread:15648 [wandb_run.py:_redirect():2314] Redirects installed.
+2025-04-06 00:20:55,144 INFO    MainThread:15648 [wandb_init.py:init():916] run started, returning control to user process
+2025-04-06 01:15:59,775 WARNING MsgRouterThr:15648 [router.py:message_loop():75] message_loop has been closed
